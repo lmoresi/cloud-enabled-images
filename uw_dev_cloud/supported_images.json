@@ -1,0 +1,31 @@
+[
+    {
+        "description": "VIEPS python course 2019",
+        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.08",
+        "poststart": [
+            "python",
+            "/user_data/scripts/install_notebooks.py"
+        ],
+        "notebook_dir": "/home/jovyan/PYE_2019",
+        "default_url": "/lab/tree/Notebooks/0-StartHere.ipynb",
+        "cmd": [
+            "jupyter-labhub"
+        ]
+    },
+    {
+        "description": "Underworld petsc4py image",
+        "imagename": "underworldcode/petsc4py:3.11.2-jupyterhub",
+        "poststart": null,
+        "notebook_dir": "/home/jovyan",
+        "default_url": "/lab",
+        "cmd": null
+    },
+    {
+        "description": "User specified image",
+        "imagename": "",
+        "poststart": null,
+        "notebook_dir": null,
+        "default_url": null,
+        "cmd": null
+    }
+]
