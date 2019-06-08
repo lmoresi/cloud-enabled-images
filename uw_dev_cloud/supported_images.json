@@ -19,13 +19,5 @@
         "notebook_dir": "/home/jovyan",
         "default_url": "/lab",
         "cmd": null
-    },
-    {
-        "description": "User specified image",
-        "imagename": "",
-        "poststart": null,
-        "notebook_dir": null,
-        "default_url": null,
-        "cmd": null
     }
 ]
