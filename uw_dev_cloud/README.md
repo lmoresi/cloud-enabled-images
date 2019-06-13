@@ -4,4 +4,3 @@ Is read by the hub spawner for the underworld dev cloud and populates the list o
 
 Any of the fields, including the image name, can be over-ridden at this point, so, actually, this list is
 helpful in providing shortcuts.
-
