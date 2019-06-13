@@ -1,7 +1,7 @@
 [
     {
         "description": "VIEPS python course 2019",
-        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.15i",
+        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.15ii",
         "poststart": [
             "python",
             "/user_data/scripts/install_notebooks.py"
