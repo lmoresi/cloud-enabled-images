@@ -15,7 +15,7 @@
     {   "id":"petsc4py-dev",
         "description": "Underworld petsc4py image",
         "imagename": "underworldcode/petsc4py:3.11.2-jupyterhub",
-        "poststart": ["echo", "petsc4py"],
+        "poststart": ["python", "-c", "print('petsc4py')"],
         "notebook_dir": "/home/jovyan",
         "default_url": "/lab",
         "cmd": [
