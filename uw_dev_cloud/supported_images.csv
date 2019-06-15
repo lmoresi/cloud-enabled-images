@@ -1,3 +1,0 @@
-description,imagename,cmd,poststart,notebook_dir,default_url
-VIEPS python course 2019,lmoresi/docker-vieps-pye-jhub:2019.06.15ii,['jupyter-labhub'],"['python', '/user_data/scripts/install_notebooks.py']",/home/jovyan/PYE_2019,/lab/tree/Notebooks/0-StartHere.ipynb
-Underworld petsc4py image,underworldcode/petsc4py:3.11.2-jupyterhub,,,/home/jovyan,/lab
