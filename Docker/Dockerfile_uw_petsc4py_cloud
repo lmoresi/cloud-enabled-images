@@ -70,9 +70,8 @@ CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''",
 RUN pip install lavavu --upgrade
 RUN pip install imageio
 RUN pip install cloudstor
-RUN pip install git+https://github.com/underworldcode/stripy
+RUN pip install stripy
 RUN pip install litho1pt0
-
 
 ## =============================================================
 # This ensures that any notebooks (etc) we add into the user_data space
