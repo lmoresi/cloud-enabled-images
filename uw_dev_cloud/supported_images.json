@@ -9,7 +9,7 @@
         "notebook_dir": "/home/jovyan/PYE_2019",
         "default_url": "/lab/tree/Notebooks/0-StartHere.ipynb",
         "cmd": [
-            "/user_data/scripts/launch-services.sh"
+            "jupyter-labhub"
         ]
     },
 
