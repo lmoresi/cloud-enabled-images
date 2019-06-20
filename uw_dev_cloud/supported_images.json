@@ -1,7 +1,7 @@
 [
     {   "id":"pye-2019",
         "description": "VIEPS python course 2019",
-        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20iii",
+        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20iv",
         "poststart": [
             "python",
             "/user_data/scripts/install_notebooks.py"
@@ -15,12 +15,12 @@
 
         {   "id":"pye-2019-2",
             "description": "VIEPS python course 2019",
-            "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20iii",
+            "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20iv",
             "notebook_dir": "/home/jovyan/PYE_2019",
             "poststart": null,
             "default_url": "/lab/tree/Notebooks/0-StartHere.ipynb",
             "cmd": [
-                "/user_data/scripts/launch-services.sh"
+                "/user_data/scripts/launch-services.py"
             ]
         },
 
