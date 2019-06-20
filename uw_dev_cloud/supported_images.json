@@ -22,4 +22,13 @@
             "jupyter-labhub"
         ]
     }
+    {   "id":"blank",
+        "description": "Complete the fields below",
+        "imagename": "",
+        "poststart": null,
+        "notebook_dir": "",
+        "default_url": "",
+        "cmd": ""
+    }
+]
 ]
