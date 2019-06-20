@@ -21,7 +21,7 @@
         "cmd": [
             "jupyter-labhub"
         ]
-    }
+    },
     {   "id":"blank",
         "description": "Complete the fields below",
         "imagename": "",
