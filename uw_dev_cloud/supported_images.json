@@ -17,6 +17,7 @@
             "description": "VIEPS python course 2019",
             "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20iii",
             "notebook_dir": "/home/jovyan/PYE_2019",
+            "poststart": null,
             "default_url": "/lab/tree/Notebooks/0-StartHere.ipynb",
             "cmd": [
                 "/user_data/scripts/launch-services.sh"
