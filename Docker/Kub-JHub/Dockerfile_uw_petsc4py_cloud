@@ -32,21 +32,10 @@ RUN chmod +rx /user_data && chown -R jovyan:jovyan /user_data
 WORKDIR  /user_data/
 
 ENV JUPYTERLAB_DIR=/user_data/jupyterlab
-
 RUN pip install jupyterlab --upgrade
-RUN pip install jupyterlab-git
 RUN pip install jupyter-server-proxy --upgrade
-RUN pip install jupyterlab_github --upgrade
-RUN jupyter labextension install @jupyterlab/hub-extension
-RUN jupyter labextension install @jupyterlab/google-drive
-RUN jupyter labextension install @jupyterlab/git
-RUN jupyter serverextension enable --py jupyterlab_git  --sys-prefix
-RUN jupyter labextension install jupyterlab-server-proxy
-RUN jupyter labextension install @mflevine/jupyterlab_html
-RUN jupyter labextension install @jupyterlab/github
-RUN jupyter serverextension enable --sys-prefix jupyterlab_github
-RUN jupyter serverextension enable --sys-prefix jupyter_server_proxy
-RUN jupyter lab build
+
+RUN pip install cloudstor
 
 # expose notebook port and any other servers
 EXPOSE 8888
@@ -63,15 +52,26 @@ ENTRYPOINT ["/usr/local/bin/xvfbrun.sh"]
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''", "--default_url=/lab/tree/PYE_2019/Notebooks/0-StartHere.ipynb" ]
 
 ## =============================================================
-## DEMO content follows ...
-## Some sample functionality: stripy and lavavu
+## DEMO content ...
 ## =============================================================
 
-RUN pip install lavavu --upgrade
-RUN pip install imageio
-RUN pip install cloudstor
-RUN pip install stripy
-RUN pip install litho1pt0
+# RUN pip install lavavu --upgrade
+# RUN pip install imageio
+# RUN pip install cloudstor
+# RUN pip install stripy
+# RUN pip install litho1pt0
+# RUN pip install git+https://github.com/jmansour/underworld2@pip
+
+## Experiment
+
+# RUN apt-get update -y ;
+# RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends --fix-missing \
+#          davfs2 \
+#          fuse \
+#          gvfs gvfs-bin \
+#          && rm -rf /var/lib/apt/lists/*
+
+
 
 ## =============================================================
 # This ensures that any notebooks (etc) we add into the user_data space
