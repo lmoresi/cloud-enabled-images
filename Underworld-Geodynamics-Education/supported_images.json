@@ -7,7 +7,7 @@
             "/user_data/scripts/install_user_files.py"
         ],
         "notebook_dir": "/user_data/Intro2Geodynamics",
-        "default_url": "/lab/tree/LandingPage.ipynb",
+        "default_url": "/lab/tree/LandingPage.md",
         "cmd": [
             "jupyter-labhub"
         ]
