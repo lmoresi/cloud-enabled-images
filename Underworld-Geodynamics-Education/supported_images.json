@@ -9,7 +9,7 @@
         "notebook_dir": "/user_data/Intro2Geodynamics",
         "default_url": "/lab/tree/LandingPage.ipynb",
         "cmd": [
-            "jupyter-labhub"
+            "jupyter-labhub",
         ]
     }
 ]
