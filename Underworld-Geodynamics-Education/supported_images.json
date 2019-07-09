@@ -1,0 +1,15 @@
+[
+    {   "id":"intro-2-geodynamics",
+        "description": "An Introduction to Computational Geodynamics",
+        "imagename": "lmoresi/docker-cloud-geodynamics:v0.1.0",
+        "poststart": [
+            "python",
+            "/user_data/scripts/install_user_files.py"
+        ],
+        "notebook_dir": "/user_data/Intro2Geodynamics",
+        "default_url": "/lab/tree/LandingPage.ipynb",
+        "cmd": [
+            "jupyter-labhub"
+        ]
+    }
+]
