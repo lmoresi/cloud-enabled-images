@@ -11,5 +11,15 @@
         "cmd": [
             "jupyter-labhub"
         ]
+    },
+    {   "id":"intro-2-geodynamics-2",
+        "description": "An Introduction to Computational Geodynamics with worked examples in the form of jupyter notebooks",
+        "imagename": "lmoresi/docker-cloud-geodynamics:v0.1.3",
+        "poststart": null,
+        "notebook_dir": "/user_data/Intro2Geodynamics",
+        "default_url": "/lab/tree/LandingPage.md",
+        "cmd": [
+            "jupyter-labhub"
+        ]
     }
 ]
