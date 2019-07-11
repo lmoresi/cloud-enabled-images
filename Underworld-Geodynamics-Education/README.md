@@ -1,10 +1,24 @@
 ## This json file ...
 
+Is read by the hub spawner for the underworld  cloud and populates the list of images that the user can select. If the user is a (public) member of the [Underworld-Geodynamics-Education](https://github.com/Underworld-Geodynamics-Education) group, then he/she will be able to run any of the images that are listed here.
+
+The file can be browsed [here](https://github.com/underworld-geodynamics-cloud/cloud-enabled-images/blob/master/Underworld-Geodynamics-Education/supported_images.json) on GitHub.
+
+## Available images (by uw cloud ID)
+
+   - `intro-2-geodynamics` - learning computational geodynamics with jupyter notebook examples
+
+## Examples
+
+The following link opens the generic browser for the images available to the given user for the underworld cloud in a new browser window. The user will need to authenticate with github first. If the user is a member of `Underworld-Geodynamics-Education` then among all  of the public images and the images for all the groups will be the images listed here.
+
+ - [http://user.cloud.underworldcode.org](http://user.cloud.underworldcode.org)
 
 
-Is read by the hub spawner for the underworld dev cloud and populates the list of images that the user can select.
+This link opens the image browser for the images associated with this group:
 
-Any of the fields, including the image name, can be over-ridden at this point, so, actually, this list is
-helpful in providing shortcuts.
+ - [http://user.cloud.underworldcode.org/user-redirect/lab?org=Underworld-Geodynamics-Education](http://user.cloud.underworldcode.org/user-redirect/lab?org=Underworld-Geodynamics-Education)
 
-**NOTE:** The hub only checks this repo at launch / restart time for the individual pod, not every time a user tries to spawn a new image.
+This link opens the `intro-2-geodynamics` image associated with this organisation.
+
+  - [http://user.cloud.underworldcode.org/user-redirect/lab?org=Underworld-Geodynamics-Education&id=intro-2-geodynamics](http://user.cloud.underworldcode.org/user-redirect/lab?org=Underworld-Geodynamics-Education&id=intro-2-geodynamics)
