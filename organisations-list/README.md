@@ -8,3 +8,7 @@ The list of organisations corresponds to the other folders in this repository wh
 This list will be read when a user authenticated (via github) to the underworld cloud. If no organisations
 match, only those images in 'public-access' will be available. Note, 'public-access' is not the same as
 using binder ... we still request github authentication.
+
+## Tests
+
+The tests will validate the json file (exists and is valid) and should be used before committing
