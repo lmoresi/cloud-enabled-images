@@ -12,8 +12,8 @@ Currently, the following organisations have published images
 
   -  **public-access** - Only a GitHub login is required
   -  **underworld-community** - Users of the Underworld suite of codes
-  -  **Underworld-Geodynamics-Education** - 
-  -  **underworldcode** -
+  -  **Underworld-Geodynamics-Education** - Teaching resources for Computational Geodynamics
+  -  **underworldcode** - Underworld developers
 
 ## Supported docker images by organisation
 

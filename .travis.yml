@@ -3,6 +3,10 @@ python:
   - "3.6"
 # command to install dependencies
 
+# There are no dependencies per se. The testing
+# just validates that the json files are python-readable
+# and have the correct format with no missing fields.
+
 # command to run tests
 script:
   - pytest
