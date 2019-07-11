@@ -109,16 +109,6 @@ CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''",
 # RUN pip install litho1pt0
 # RUN pip install git+https://github.com/jmansour/underworld2@pip
 
-## Experiment
-
-# RUN apt-get update -y ;
-# RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends --fix-missing \
-#          davfs2 \
-#          fuse \
-#          gvfs gvfs-bin \
-#          && rm -rf /var/lib/apt/lists/*
-
-# This might be useful
 
 WORKDIR  /user_data
 

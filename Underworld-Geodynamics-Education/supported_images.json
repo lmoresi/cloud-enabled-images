@@ -14,7 +14,7 @@
     },
     {   "id":"intro-2-python-earth-sci",
         "description": "Applications of Python for Earth Scientists ",
-        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20ii",
+        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20iv",
         "poststart": [
             "python",
             "/user_data/scripts/install_notebooks.py"
