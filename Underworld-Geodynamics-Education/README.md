@@ -22,3 +22,7 @@ This link opens the image browser for the images associated with this group:
 This link opens the `intro-2-geodynamics` image associated with this organisation.
 
   - [http://user.cloud.underworldcode.org/user-redirect/lab?org=Underworld-Geodynamics-Education&id=intro-2-geodynamics](http://user.cloud.underworldcode.org/user-redirect/lab?org=Underworld-Geodynamics-Education&id=intro-2-geodynamics)
+
+To open a specific page when the image launches, construct the path as follows:
+
+- [http://user.cloud.underworldcode.org/user-redirect/lab/tree/AnotherPage.md?org=Underworld-Geodynamics-Education&id=intro-2-geodynamics](http://user.cloud.underworldcode.org/user-redirect/lab/tree/AnotherPage.md?org=Underworld-Geodynamics-Education&id=intro-2-geodynamics)
