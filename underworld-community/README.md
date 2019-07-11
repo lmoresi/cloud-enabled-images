@@ -6,7 +6,8 @@ The file can be browsed [here](https://github.com/underworld-geodynamics-cloud/c
 
 ## Available images (by uw cloud ID)
 
-NOTE: These are not updated as of July 11
+NOTE: These are not updated as of July 11 - this will be updated
+      and the links below as well.
 
    - `intro-2-geodynamics` - learning computational geodynamics with jupyter notebook examples
    - `intro-2-python-earth-sci` - applications of python code to Earth Sciences
