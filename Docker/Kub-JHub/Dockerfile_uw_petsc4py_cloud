@@ -72,6 +72,7 @@ RUN jupyter-serverextension enable --py jupyterlab_git --sys-prefix
 ## Google drive labextension (leave disabled)
 RUN jupyter labextension install @jupyterlab/google-drive
 RUN jupyter labextension disable @jupyterlab/google-drive
+RUN jupyter labextension install @jupyterlab/hub-extension
 
 RUN jupyter-lab build
 

@@ -1,17 +1,4 @@
 [
-    {   "id":"pye-2019",
-        "description": "VIEPS python course 2019",
-        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20ii",
-        "poststart": [
-            "python",
-            "/user_data/scripts/install_notebooks.py"
-        ],
-        "notebook_dir": "/home/jovyan/PYE_2019",
-        "default_url": "/lab/tree/Notebooks/0-StartHere.ipynb",
-        "cmd": [
-            "/user_data/scripts/launch-services.sh"
-        ]
-    },
     {   "id":"petsc4py-dev",
         "description": "Underworld petsc4py image",
         "imagename": "underworldcode/petsc4py_cloud:2019.06.20_dev",

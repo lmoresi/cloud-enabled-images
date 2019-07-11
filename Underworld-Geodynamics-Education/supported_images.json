@@ -11,5 +11,18 @@
         "cmd": [
             "jupyter-labhub"
         ]
-    }
+    },
+    {   "id":"intro-2-python-earth-sci",
+        "description": "Applications of Python for Earth Scientists ",
+        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20ii",
+        "poststart": [
+            "python",
+            "/user_data/scripts/install_notebooks.py"
+        ],
+        "notebook_dir": "/home/jovyan/PYE_2019",
+        "default_url": "/lab/tree/Notebooks/0-StartHere.ipynb",
+        "cmd": [
+            "jupyter-labhub"
+        ]
+    },
 ]
