@@ -11,7 +11,7 @@ The `organisations-list` directory contains the supported GitHub organisations. 
 Currently, the following organisations have published images
 
   -  **public-access** - Only a GitHub login is required
-  -  **underworld-community** - Users of the Underworld suite of codes
+  -  **Underworld-Geodynamics-Education** - Users of the Underworld suite of codes
   -  **Underworld-Geodynamics-Education** - Teaching resources for Computational Geodynamics
   -  **underworldcode** - Underworld developers
 
@@ -19,4 +19,4 @@ Currently, the following organisations have published images
 
 For each of the supported GitHub organisations
 
-Is read by the hub spawner for the underworld  cloud and populates the list of images that the user can select. If the user is a (public) member of the [underworld-community](https://github.com/underworld-community) group, then he/she will be able to run any of the images that are listed here.
+Is read by the hub spawner for the underworld  cloud and populates the list of images that the user can select. If the user is a (public) member of the [Underworld-Geodynamics-Education](https://github.com/Underworld-Geodynamics-Education) group, then he/she will be able to run any of the images that are listed here.

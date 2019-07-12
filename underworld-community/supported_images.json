@@ -1,23 +1,26 @@
 [
-    {   "id":"pye-2019",
-        "description": "VIEPS python course 2019",
-        "imagename": "lmoresi/docker-vieps-pye-jhub:2019.06.20ii",
+    {   "id":"intro-2-geodynamics",
+        "description": "An Introduction to Computational Geodynamics with worked examples in the form of jupyter notebooks",
+        "imagename": "lmoresi/docker-cloud-geodynamics:v0.1.6",
         "poststart": [
             "python",
-            "/user_data/scripts/install_notebooks.py"
+            "/user_data/scripts/install_user_files.py"
         ],
-        "notebook_dir": "/home/jovyan/PYE_2019",
-        "default_url": "/lab/tree/Notebooks/0-StartHere.ipynb",
+        "notebook_dir": "/user_data/Intro2Geodynamics",
+        "default_url": "/lab/tree/LandingPage.md",
         "cmd": [
-            "/user_data/scripts/launch-services.sh"
+            "jupyter-labhub"
         ]
     },
-    {   "id":"petsc4py-dev",
-        "description": "Underworld petsc4py image",
-        "imagename": "underworldcode/petsc4py_cloud:2019.06.20_dev",
-        "poststart": null,
-        "notebook_dir": "/home/jovyan",
-        "default_url": "/lab",
+    {   "id":"intro-2-python-earth-sci",
+        "description": "Applications of Python for Earth Scientists (Assumes a good working knowledge of python)",
+        "imagename": "lmoresi/docker-cloud-python:v0.1.3",
+        "poststart": [
+            "python",
+            "/user_data/scripts/install_user_files.py"
+        ],
+        "notebook_dir": "/user_data/Intro2Python",
+        "default_url": "/lab/tree/LandingPage.md",
         "cmd": [
             "jupyter-labhub"
         ]
