@@ -1,7 +1,7 @@
 [
     {   "id":"intro-2-geodynamics",
         "description": "An Introduction to Computational Geodynamics with worked examples in the form of jupyter notebooks",
-        "imagename": "lmoresi/docker-cloud-geodynamics:v0.1.6",
+        "imagename": "lmoresi/docker-cloud-geodynamics:v0.1.8",
         "poststart": [
             "python",
             "/user_data/scripts/install_user_files.py"

@@ -1,12 +1,3 @@
 [
-    {   "id":"petsc4py-dev",
-        "description": "Underworld petsc4py image",
-        "imagename": "underworldcode/petsc4py_cloud:2019.06.20_dev",
-        "poststart": null,
-        "notebook_dir": "/home/jovyan",
-        "default_url": "/lab",
-        "cmd": [
-            "jupyter-labhub"
-        ]
-    }
+
 ]
