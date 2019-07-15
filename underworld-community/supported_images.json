@@ -1,28 +1,2 @@
 [
-    {   "id":"intro-2-geodynamics",
-        "description": "An Introduction to Computational Geodynamics with worked examples in the form of jupyter notebooks",
-        "imagename": "lmoresi/docker-cloud-geodynamics:v0.1.6",
-        "poststart": [
-            "python",
-            "/user_data/scripts/install_user_files.py"
-        ],
-        "notebook_dir": "/user_data/Intro2Geodynamics",
-        "default_url": "/lab/tree/LandingPage.md",
-        "cmd": [
-            "jupyter-labhub"
-        ]
-    },
-    {   "id":"intro-2-python-earth-sci",
-        "description": "Applications of Python for Earth Scientists (Assumes a good working knowledge of python)",
-        "imagename": "lmoresi/docker-cloud-python:v0.1.6",
-        "poststart": [
-            "python",
-            "/user_data/scripts/install_user_files.py"
-        ],
-        "notebook_dir": "/user_data/Intro2Python",
-        "default_url": "/lab/tree/LandingPage.md",
-        "cmd": [
-            "jupyter-labhub"
-        ]
-    }
 ]
