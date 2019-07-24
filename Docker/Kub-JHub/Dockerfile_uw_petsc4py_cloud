@@ -97,8 +97,6 @@ EXPOSE 8888
 RUN printf "#\041/bin/sh \n rm -f /tmp/.X99-lock && xvfb-run -s '-screen 0 1600x1200x16' \$@" > /usr/local/bin/xvfbrun.sh && \
                     chmod +x /usr/local/bin/xvfbrun.sh
 
-
-
 ENTRYPOINT ["/usr/local/bin/xvfbrun.sh"]
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''", "--LabApp.default_url='/lab/tree/README.md'" ]
 

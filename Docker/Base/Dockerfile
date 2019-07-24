@@ -109,7 +109,6 @@ ENV PYTHONPATH $PYTHONPATH:/usr/lib
 RUN CC=h5pcc HDF5_MPI="ON" HDF5_DIR=${PETSC_DIR} python3 -m pip install --no-cache-dir --no-binary=h5py h5py && \
     python3 -m pip install --no-cache-dir petsc4py
 
-
 WORKDIR /tmp/jupyterhub-build
 RUN apt-get update -qq && \
     curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
