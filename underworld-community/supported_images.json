@@ -1,7 +1,7 @@
 [
     {   "id":"uw-community-github",
         "description": "The underworld community (v2.8 test release)",
-        "imagename": "lmoresi/uw_on_the_uw_user_cloud:2019.07.23_dev",
+        "imagename": "lmoresi/uw_on_the_uw_user_cloud:2019.07.23i_dev",
         "poststart": [
             "python3",
             "/user_data/scripts/install_user_files.py"
