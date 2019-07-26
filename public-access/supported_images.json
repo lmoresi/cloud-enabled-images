@@ -1,3 +1,13 @@
 [
-
+  {   "id":"uw-intro2underworld",
+      "description": "The underworld community (v2.8 test release)",
+      "imagename": "lmoresi/uw_on_the_uw_user_cloud:2019.07.25_dev",
+      "notebook_dir": "/user_data/Underworld",
+      "default_url": "LandingPage.md",
+      "poststart": null,
+      "cmd": [
+          "jupyter-labhub"
+      ],
+      "github-landing": "underworld-community/official"
+  }
 ]
