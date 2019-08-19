@@ -12,7 +12,7 @@ def read_known_orgs_from_json():
 
     orgs = orgs_dict["orgs"]
 
-    return(orgs)
+    return orgs
 
 
 def test_valid_orgs_list():
@@ -21,38 +21,32 @@ def test_valid_orgs_list():
     assert isinstance(orgs_list, list)
     return
 
-@pytest.mark.parametrize("org", read_known_orgs_from_json())
-def test_org_directories_valid(org):
 
-    assert os.path.exists(org)
-    assert os.path.exists(os.path.join(org,"supported_images.json"))
+def test_image_format_valid():
 
-    return
-
-## Should break if the valid directory fails
-@pytest.mark.parametrize("org", read_known_orgs_from_json())
-def test_org_directories_valid_json(org):
-
-    this_json = os.path.join(org,"supported_images.json")
-    with open(this_json) as f:
-        im_list = json.load(f)
-
-    assert isinstance(im_list, list)
-
-    for image in im_list:
-        assert isinstance(image, dict)
-
-    return
-
-## Should break if the valid image json fails
-@pytest.mark.parametrize("org", read_known_orgs_from_json())
-def test_image_format_valid(org):
-
-    this_json = os.path.join(org,"supported_images.json")
+    this_json = os.path.join("docker-images","supported_images.json")
     with open(this_json) as f:
         im_list = json.load(f)
 
     for image in im_list:
         keys = image.keys()
-        for expected_key in ['id', 'description', 'imagename', 'poststart', 'notebook_dir', 'default_url', 'cmd']:
+        for expected_key in ['id', 'description', 'imagename', 'poststart', 'notebook_dir', 'default_url', 'cmd', 'organisations']:
             assert expected_key  in keys
+
+
+def test_no_orphan_images():
+
+    this_json = os.path.join("docker-images","supported_images.json")
+    with open(this_json) as f:
+        im_list = json.load(f)
+
+    orgs_list = read_known_orgs_from_json()
+
+    our_orgs = set()
+
+    for image in im_list:
+        for org in image["organisations"]:
+            our_orgs.add(org)
+
+    for org in our_orgs:
+        assert org in orgs_list

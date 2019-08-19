@@ -1,0 +1,79 @@
+[
+  {   "id":"uw-intro2underworld",
+      "description": "The underworld community (v2.8 test release)",
+      "imagename": "lmoresi/uw_on_the_uw_user_cloud:2019.08.01_dev",
+      "notebook_dir": "/user_data/Underworld",
+      "default_url": "/lab/tree/LandingPage.md",
+      "poststart": [
+          "python3",
+          "/user_data/scripts/install_user_files.py"
+      ],
+      "cmd": [
+          "jupyter-labhub"
+      ],
+      "github-landing": "underworld-community/official",
+      "organisations":  ["public-access", "underworld-community"]
+
+  },
+  {   "id":"uw-community-github",
+        "description": "The underworld community (v2.8 test release)",
+        "imagename": "lmoresi/uw_on_the_uw_user_cloud:2019.07.25_dev",
+        "poststart": [
+            "python3",
+            "/user_data/scripts/install_user_files.py"
+        ],
+        "notebook_dir": "/user_data/Underworld",
+        "default_url": null,
+        "cmd": [
+            "jupyter-labhub"
+        ],
+        "github-landing": "underworld-community/official",
+        "organisations":  ["public-access", "underworld-community"]
+    },
+    {   "id":"petsc4py-dev",
+        "description": "Underworld petsc4py image",
+        "imagename": "underworldcode/petsc4py_cloud:2019.06.15_dev",
+        "poststart": null,
+        "notebook_dir": "/home/jovyan",
+        "default_url": "/lab",
+        "cmd": [
+            "jupyter-labhub"
+        ],
+        "github-landing": "underworldcode",
+        "organisations":  ["underworldcode"]
+
+    },
+    {   "id":"intro-2-geodynamics",
+        "description": "An Introduction to Computational Geodynamics with worked examples in the form of jupyter notebooks",
+        "imagename": "lmoresi/docker-cloud-geodynamics:v0.1.8",
+        "poststart": [
+            "python",
+            "/user_data/scripts/install_user_files.py"
+        ],
+        "notebook_dir": "/user_data/Intro2Geodynamics",
+        "default_url": "/lab/tree/LandingPage.md",
+        "cmd": [
+            "jupyter-labhub"
+        ],
+        "github-landing": null,
+        "organisations":  ["public-access", "Underworld-Geodynamics-Education"]
+
+    },
+    {   "id":"intro-2-python-earth-sci",
+        "description": "Applications of Python for Earth Scientists (Assumes a good working knowledge of python)",
+        "imagename": "lmoresi/docker-cloud-python:v0.1.7",
+        "poststart": [
+            "python",
+            "/user_data/scripts/install_user_files.py"
+        ],
+        "notebook_dir": "/user_data/Intro2Python",
+        "default_url": "/lab/tree/LandingPage.md",
+        "cmd": [
+            "jupyter-labhub"
+        ],
+        "github-landing": null,
+        "organisations":  ["public-access", "Underworld-Geodynamics-Education"]
+    }
+
+
+]
