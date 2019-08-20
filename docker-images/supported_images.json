@@ -9,7 +9,7 @@
           "/user_data/scripts/install_user_files.py"
       ],
       "cmd": [
-          "jupyter-labhub"
+          "jupyter-lab"
       ],
       "github-landing": "underworld-community/official",
       "organisations":  ["public-access"]
